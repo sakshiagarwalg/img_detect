@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>web cam</title>
+<style type ="text/css">
+p {
+    color: brown;
+    font-family: courier;
+    font-size: 150%;
+    padding-top: 45px;
+    padding-left: 50px;
+    padding-right:20px;
+    font-weight: bold; 
+    font-family: "verdana", Times, sans-serif;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+   border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width:25%;
+}
+
+.button2 {
+        background-color: #555555                   
+         } /* Black*/
+
+</style>
+</head>
+
+<body onload="init();"> 
+    <marquee><p> You have decided to take the snap using webcam</p></marquee>
+    <button onclick="startWebcam();" class="button button2">start webcam</button>
+    <video width="200" height="200" id="video" class="f"  autoplay></video>
+    
+    <button onclick="snapshot();" class="button">Selfie</button>
+    <canvas width="200" height="200" id="canvas"></canvas>
+    <button class="button button2"><a href="#" download="ss.png" id="dbtn" class=>Download</a>
+    
+</body>
+
+</html>
